@@ -22,5 +22,13 @@ def pedirNumero(invitacion):
 
 numero = pedirNumero("Adivine el numero")
 
-print(numero)
+while True:
+    intento = pedirNumero("Adivine el numero")
+    if intento<numero:
+        print("Demasiado pequenio")
+    elif intento>numero:
+        print("Demasiado grande")
+    else:
+        print("!Ha ganado¡")
+        break
     
