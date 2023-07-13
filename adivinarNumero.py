@@ -20,7 +20,7 @@ def pedirNumero(invitacion):
     return entrada
 
 
-numero = pedirNumero("Adivine el numero")
+numero = rd.randint(0,100)
 
 while True:
     intento = pedirNumero("Adivine el numero")
