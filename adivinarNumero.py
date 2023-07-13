@@ -1,12 +1,26 @@
 import random as rd
 import sys
 
-numero = rd.randint(0,100)
-numAdivinar = input("Adivine el numero: ")
 
-try:
-    numAdivinar = int(numAdivinar)
-except:
-    print("Error, no ingreso un numero")
-    sys.exit()
+MIN = 0
+MAX = 99
+
+def pedirNumero(invitacion):
+    invitacion += " entre " + str(MIN) + " y " + str(MAX) + ": "
+    
+    while True:
+        entrada =  input(invitacion)
+        try:
+            entrada = int(entrada)
+        except:
+            pass
+        else:
+            if MIN <= entrada <= MAX:
+                break 
+    return entrada
+
+
+numero = pedirNumero("Adivine el numero")
+
+print(numero)
     
