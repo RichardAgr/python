@@ -16,12 +16,12 @@ def pedirNumero(invitacion):
         try:
             entrada = int(entrada)
         except:
-            pass
+            print("Solo introduce numeros del 0 -> 99!!!",file=sys.stderr)
         else:
             if MIN <= entrada <= MAX:
                 break 
-    return entrada
 
+    return entrada
 
 numero = rd.randint(0,100)
 
