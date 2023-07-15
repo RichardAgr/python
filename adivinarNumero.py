@@ -1,6 +1,7 @@
 import random as rd
 import sys
 
+numero = rd.randint(0,100)
 
 MIN = 0
 MAX = 99
@@ -23,7 +24,6 @@ def pedirNumero(invitacion):
 
     return entrada
 
-numero = rd.randint(0,100)
 
 while True:
     intento = pedirNumero("Adivine el numero")
